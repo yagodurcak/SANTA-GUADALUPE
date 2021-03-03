@@ -1,0 +1,369 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
+
+.split {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1120px) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
+
+.navegacion{
+  height: 3.125rem;
+}
+
+
+.navbar-brand img {
+
+  height: 8.125rem;
+  width: 5rem;
+  padding: 0rem 0rem;
+  margin-top: -0.8125rem;
+  margin-bottom: -2.5rem;
+}
+
+.letra-logo{
+  margin-top: 0.625rem;
+  /* background-color: aqua; */
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding-left: 0;
+}
+
+.S-G{
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.5625rem;
+  font-weight: 400;
+  opacity: 0.9;
+  /* background-color: aqua; */
+  
+}
+.SS{
+  margin-top: -0.625rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.25rem;
+  font-weight:100;
+  opacity: 0.7;
+  /* background-color:brown */
+}
+.nav.link{
+  color: white;
+}
+
+.nav-link:hover{
+  color: #464646;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+.front {
+  width: 100%;
+  height: 40.5625rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  
+  /* Location of the image */
+  background-image: url("../img/fondo1.png");
+  
+
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+         the content height is greater than the image height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color: #464646;
+
+  /* SHORTHAND CSS NOTATION
+       * background: url(background-photo.jpg) center center cover no-repeat fixed;
+       */
+
+       font-size: 1rem;
+}
+
+@media only screen and (max-width: 47.9375rem) {
+  .front {
+     /* The file size of this background image is 93% smaller
+          to improve page load speed on mobile internet connections */ 
+     background-image: url("../img/fondo2.png");
+  }
+} 
+
+.logo-front{
+
+  height: 28.125rem;
+}
+
+/* nuestros servicios */
+.servicios{
+  padding-top: 5rem;
+  height: 47.5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulos{
+  font-family: 'Barlow', sans-serif;
+  color: #464646;
+  font-size: 3.75rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.dos-columnas{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #E30B13; */
+  width: 68.75rem;
+}
+
+.row{
+  /* background-color: aqua; */
+  width: 31.25rem;
+  height: 37.5rem;
+  /* overflow: hidden; */
+  margin-top: 12.5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.carta-left img{
+  height: 18.75rem;
+  width: 28.125rem;
+
+}
+
+.carta-text h3{
+
+  font-family: 'Barlow', sans-serif;
+  color:#E30B13 ;
+  padding: 1.25rem 0rem;  
+  font-size: 1.875rem;
+
+}
+.carta-text p{
+
+  font-family: 'Barlow', sans-serif;
+  color:#464646;
+  padding: 0rem 0rem; 
+  opacity: 0.7; 
+  font-size: 0.9375rem;
+
+}
+
+
+.nosotros{
+  background-image: url("../img/borroso.png");
+  height: 37.5rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* overflow:scroll; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.nstrs-dos{
+  /* background-color: #E30B13; */
+  width: 68.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono-rojo{
+
+  height: 37.5rem;
+  width: 37.5rem;
+
+}
+
+.nosotros-left{
+  /* background-color: antiquewhite; */
+  display: grid;
+  justify-content: center;
+}
+
+.nosotros-left img{
+
+  height: 25rem;
+  
+}
+
+.nosotros-text{
+
+/* background-color: #E30B13; */
+height: 28.25rem;
+}
+
+.nosotros-p{
+  padding-top: 2.5rem;
+font-size: 1.125rem;
+color:gray;
+font-weight: bold;
+opacity: 0.8;
+
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+  *{
+      font-size: 16px;
+  }
+
+
+  
+}
+@media screen and (max-width: 1120px){
+  *{
+      font-size: 16px;
+  }
+  .servicios{
+    padding-top: 5rem;
+    height: 87.5rem;  
+  }
+
+  .nosotros{
+    
+       height: 70.5rem;  }
+
+  .nosotros-text{
+    margin-top: -250px;
+  }
+
+  
+}
+@media screen and (max-width: 992px){
+  *{
+      font-size: 14px;
+  }
+  .S-G{
+   
+    /* background-color: aqua; */
+    display: none;
+    
+  }
+  .SS{
+    
+    /* background-color:brown */
+    display: none;
+  }
+
+
+
+
+  
+}
+@media screen and (max-width: 768px){
+  *{
+      font-size: 12px;
+  }
+  .S-G{
+   
+    /* background-color: aqua; */
+    display: none;
+    
+  }
+  .SS{
+    
+    /* background-color:brown */
+    display: none;
+  }
+
+
+
+}
+@media screen and (max-width: 576px){
+  *{
+      font-size: 10px;
+  }
+
+  .logo-front{
+
+    height: 25.125rem;
+  }
+
+  .S-G{
+   
+    /* background-color: aqua; */
+    display: none;
+    
+  }
+  .SS{
+    
+    /* background-color:brown */
+    display: none;
+  }
+}
+@media screen and (max-width: 390px){
+  *{
+      font-size: 8px;
+  }
+
+  .logo-front{
+
+    height: 20.125rem;
+  }
+
+  .S-G{
+
+    /* background-color: aqua; */
+    display: none;
+    
+  }
+  .SS{
+ 
+    display: none;
+  }
+
+  .nosotros-text{
+    margin-top: -150px;
+  }
+
+}
+
+
+/* nuestros servicios  */
+
