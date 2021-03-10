@@ -18,16 +18,16 @@
     flex-direction: row;
   }
 
-  .split > * {
+  .split>* {
     flex-basis: 100%;
   }
 
-  .split > * + * {
+  .split>*+* {
     margin-left: 2em;
   }
 }
 
-.navegacion{
+.navegacion {
   height: 3.125rem;
 }
 
@@ -41,7 +41,7 @@
   margin-bottom: -2.5rem;
 }
 
-.letra-logo{
+.letra-logo {
   margin-top: 0.625rem;
   /* background-color: aqua; */
   list-style: none;
@@ -50,29 +50,32 @@
   padding-left: 0;
 }
 
-.S-G{
+.S-G {
   font-family: 'Barlow', sans-serif;
   font-size: 1.5625rem;
   font-weight: 400;
   opacity: 0.9;
   /* background-color: aqua; */
-  
+
 }
-.SS{
+
+.SS {
   margin-top: -0.625rem;
   font-family: 'Barlow', sans-serif;
   font-size: 1.25rem;
-  font-weight:100;
+  font-weight: 100;
   opacity: 0.7;
   /* background-color:brown */
 }
-.nav.link{
+
+.nav.link {
   color: white;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #464646;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -85,10 +88,10 @@ img {
   display: grid;
   justify-content: center;
   align-items: center;
-  
+
   /* Location of the image */
   background-image: url("../img/fondo1.png");
-  
+
 
   /* Image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -110,24 +113,24 @@ img {
        * background: url(background-photo.jpg) center center cover no-repeat fixed;
        */
 
-       font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 47.9375rem) {
   .front {
-     /* The file size of this background image is 93% smaller
-          to improve page load speed on mobile internet connections */ 
-     background-image: url("../img/fondo2.png");
+    /* The file size of this background image is 93% smaller
+          to improve page load speed on mobile internet connections */
+    background-image: url("../img/fondo2.png");
   }
-} 
+}
 
-.logo-front{
+.logo-front {
 
   height: 28.125rem;
 }
 
 /* nuestros servicios */
-.servicios{
+.servicios {
   padding-top: 5rem;
   height: 47.5rem;
   display: grid;
@@ -135,15 +138,16 @@ img {
   align-items: center;
 }
 
-.titulos{
+.titulos {
   font-family: 'Barlow', sans-serif;
   color: #464646;
   font-size: 3.75rem;
   text-align: center;
   opacity: 0.7;
+  /* background-color: #E30B13; */
 }
 
-.dos-columnas{
+.dos-columnas {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,7 +155,7 @@ img {
   width: 68.75rem;
 }
 
-.row{
+.row {
   /* background-color: aqua; */
   width: 31.25rem;
   height: 37.5rem;
@@ -164,32 +168,33 @@ img {
 }
 
 
-.carta-left img{
+.carta-left img {
   height: 18.75rem;
   width: 28.125rem;
 
 }
 
-.carta-text h3{
+.carta-text h3 {
 
   font-family: 'Barlow', sans-serif;
-  color:#E30B13 ;
-  padding: 1.25rem 0rem;  
+  color: #E30B13;
+  padding: 1.25rem 0rem;
   font-size: 1.875rem;
 
 }
-.carta-text p{
+
+.carta-text p {
 
   font-family: 'Barlow', sans-serif;
-  color:#464646;
-  padding: 0rem 0rem; 
-  opacity: 0.7; 
+  color: #464646;
+  padding: 0rem 0rem;
+  opacity: 0.7;
   font-size: 0.9375rem;
 
 }
 
 
-.nosotros{
+.nosotros {
   background-image: url("../img/borroso.png");
   height: 37.5rem;
   width: 100%;
@@ -200,10 +205,10 @@ img {
   display: grid;
   justify-content: center;
   align-items: center;
-  
+
 }
 
-.nstrs-dos{
+.nstrs-dos {
   /* background-color: #E30B13; */
   width: 68.75rem;
   display: flex;
@@ -211,154 +216,349 @@ img {
   align-items: center;
 }
 
-.icono-rojo{
+.icono-rojo {
 
   height: 37.5rem;
   width: 37.5rem;
 
 }
 
-.nosotros-left{
+.nosotros-left {
   /* background-color: antiquewhite; */
   display: grid;
   justify-content: center;
 }
 
-.nosotros-left img{
+.nosotros-left img {
 
   height: 25rem;
-  
+
 }
 
-.nosotros-text{
+.nosotros-text {
 
-/* background-color: #E30B13; */
-height: 28.25rem;
+  /* background-color: #E30B13; */
+  height: 28.25rem;
 }
 
-.nosotros-p{
+.nosotros-p {
   padding-top: 2.5rem;
-font-size: 1.125rem;
-color:gray;
-font-weight: bold;
-opacity: 0.8;
+  font-size: 1.125rem;
+  color: gray;
+  font-weight: bold;
+  opacity: 0.8;
 
+}
+
+.clientes {
+  /* padding: 35px; */
+  height: 57.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients {
+  /* background-color: #E30B13; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.clients-left img {
+  height: 18.75rem;
+
+}
+
+.clients-row {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients-row div {
+
+  padding: 1rem;
+}
+
+.cliente-logo {
+  height: 12.5rem;
+}
+
+/* TRABAJA CON NOSOTROS  */
+
+.trabaja1 {
+  padding: 1.25rem;
+
+  background-color: #D1CFCF;
+
+  /* text-align: center; */
+  /* display: grid; */
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 2.5rem 0rem; */
+  height: 27.5rem;
+
+}
+
+.trabaja1 div {
+  padding: 0.5rem;
+}
+
+.boton-cv {
+  font-size: 1.25rem;
+  border: 0.125rem solid red;
+  padding: 10px;
+  border-radius: 0.3125rem;
+  background-color: #E30B13;
+  color: white;
 }
 
 
 
+.trabaja-text {
+  margin: 0px auto;
+  width: 70%;
+  /* background-color:antiquewhite; */
+  height: 15.625rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 
-@media screen and (max-width: 1200px){
-  *{
-      font-size: 16px;
-  }
 
-
-  
 }
-@media screen and (max-width: 1120px){
-  *{
-      font-size: 16px;
+
+
+.trabaja-p {
+  color: #464646;
+  font-size: 1.25rem;
+  opacity: 0.6;
+  /* background-color: #E30B13; */
+  margin: 0.625rem 0rem;
+}
+
+.footer {
+  background-color: #E30B13;
+  padding: 0.625rem;
+}
+
+
+footer button {
+  background-color: #2e6171;
+  color: #f3f3f3;
+  font-size: 1.875rem;
+
+}
+
+.redes {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.redes div {
+  padding: 0.625rem;
+}
+
+.icono-footer {
+  height: 6.25rem;
+}
+
+.ft-l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-m {
+  color: white;
+  text-align: center;
+  opacity: 0.7;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+  * {
+    font-size: 16px;
   }
-  .servicios{
+
+  .trabaja1 {
+
+    height: 30.5rem;
+
+  }
+
+
+
+}
+
+@media screen and (max-width: 1120px) {
+  * {
+    font-size: 16px;
+  }
+
+  .servicios {
     padding-top: 5rem;
-    height: 87.5rem;  
+    height: 87.5rem;
   }
 
-  .nosotros{
-    
-       height: 70.5rem;  }
+  .nosotros {
 
-  .nosotros-text{
+    height: 70.5rem;
+  }
+
+  .nosotros-text {
     margin-top: -250px;
   }
 
-  
-}
-@media screen and (max-width: 992px){
-  *{
-      font-size: 14px;
+  .clients-left img {
+    height: 29.75rem;
+
   }
-  .S-G{
-   
+
+  .clientes {
+    height: 105.5rem;
+    overflow: hidden;
+  }
+
+
+  .trabaja1 {
+
+    height: 30.5rem;
+    /* padding: 50px; */
+
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 992px) {
+  * {
+    font-size: 14px;
+  }
+
+  .S-G {
+
     /* background-color: aqua; */
     display: none;
-    
+
   }
-  .SS{
-    
+
+  .SS {
+
     /* background-color:brown */
     display: none;
   }
 
+  .trabaja1 {
 
+    height: 30.5rem;
+    /* padding: 50px; */
 
-
-  
-}
-@media screen and (max-width: 768px){
-  *{
-      font-size: 12px;
   }
-  .S-G{
-   
+
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 12px;
+  }
+
+  .S-G {
+
     /* background-color: aqua; */
     display: none;
-    
+
   }
-  .SS{
-    
+
+  .SS {
+
     /* background-color:brown */
     display: none;
   }
 
+  .trabaja1 {
+
+    height: 35.5rem;
+    /* padding: 50px; */
+
+  }
 
 
 }
-@media screen and (max-width: 576px){
-  *{
-      font-size: 10px;
+
+@media screen and (max-width: 576px) {
+  * {
+    font-size: 10px;
   }
 
-  .logo-front{
+  .logo-front {
 
     height: 25.125rem;
   }
 
-  .S-G{
-   
+  .S-G {
+
     /* background-color: aqua; */
     display: none;
-    
+
   }
-  .SS{
-    
+
+  .SS {
+
     /* background-color:brown */
     display: none;
   }
+
+
+  .trabaja1 {
+
+    height: 40.5rem;
+    /* padding: 50px; */
+
+  }
 }
-@media screen and (max-width: 390px){
-  *{
-      font-size: 8px;
+
+@media screen and (max-width: 390px) {
+  * {
+    font-size: 8px;
   }
 
-  .logo-front{
+  .logo-front {
 
     height: 20.125rem;
   }
 
-  .S-G{
+  .S-G {
 
     /* background-color: aqua; */
     display: none;
-    
+
   }
-  .SS{
- 
+
+  .SS {
+
     display: none;
   }
 
-  .nosotros-text{
+  .nosotros-text {
     margin-top: -150px;
   }
 
@@ -366,4 +566,3 @@ opacity: 0.8;
 
 
 /* nuestros servicios  */
-
