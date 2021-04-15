@@ -27,6 +27,66 @@
   }
 }
 
+.menu{
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.header{
+  background: #E30B13;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+
+}
+
+.nav__icon{
+  margin-top: -15px;
+  padding-top: 0px;
+  height: 90px;
+  width: 60px;
+  /* margin: -50px 10px; */
+}
+
+.items{
+  margin-top: -30px;
+}
+
+.letra-logo {
+  margin-top: -1rem;
+
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding-left: 0;
+  
+}
+.S-G {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.9;
+
+
+}
+
+.SS {
+  margin-top: -0.625rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+
+}
+
+.collapse{
+  text-align: center;
+}
+/* 
 .navegacion {
   height: 3.125rem;
 }
@@ -41,32 +101,9 @@
   margin-bottom: -2.5rem;
 }
 
-.letra-logo {
-  margin-top: 0.625rem;
-  /* background-color: aqua; */
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  padding-left: 0;
-}
 
-.S-G {
-  font-family: 'Barlow', sans-serif;
-  font-size: 1.5625rem;
-  font-weight: 400;
-  opacity: 0.9;
-  /* background-color: aqua; */
 
-}
 
-.SS {
-  margin-top: -0.625rem;
-  font-family: 'Barlow', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 100;
-  opacity: 0.7;
-  /* background-color:brown */
-}
 
 .nav.link {
   color: white;
@@ -74,7 +111,7 @@
 
 .nav-link:hover {
   color: #464646;
-}
+} */
 
 img {
   display: block;
@@ -83,14 +120,16 @@ img {
 
 
 .front {
+ 
   width: 100%;
-  height: 40.5625rem;
+  height: 100vh;
   display: grid;
   justify-content: center;
   align-items: center;
+  justify-items: center;
 
   /* Location of the image */
-  background-image: url("../img/fondo1.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/fotos/3.7.jpg");
 
 
   /* Image is centered vertically and horizontally at all times */
@@ -116,17 +155,12 @@ img {
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 47.9375rem) {
-  .front {
-    /* The file size of this background image is 93% smaller
-          to improve page load speed on mobile internet connections */
-    background-image: url("../img/fondo2.png");
-  }
-}
 
 .logo-front {
+  
 
-  height: 28.125rem;
+  height: 26.125rem;
+  /* padding-bottom: 40px; */
 }
 
 /* nuestros servicios */
@@ -140,10 +174,19 @@ img {
 
 .titulos {
   font-family: 'Barlow', sans-serif;
-  color: #464646;
+  color: black;
   font-size: 3.75rem;
   text-align: center;
   opacity: 0.7;
+  /* background-color: #E30B13; */
+}
+.subtitulos {
+  font-family: 'Barlow', sans-serif;
+  color: #464646;
+  font-size: 1.75rem;
+  text-align: center;
+  opacity: 0.7;
+  margin-top: -4.375rem;
   /* background-color: #E30B13; */
 }
 
@@ -153,31 +196,42 @@ img {
   align-items: center;
   /* background-color: #E30B13; */
   width: 68.75rem;
+  margin-top: -3.125rem;
 }
 
-.row {
+.rows-1 {
   /* background-color: aqua; */
-  width: 31.25rem;
-  height: 37.5rem;
+  /* width: 1.25rem; */
+  height: 27.5rem;
   /* overflow: hidden; */
-  margin-top: 12.5rem;
+  /* margin-top: 12.5rem; */
   display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-
+.carta-left{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
 .carta-left img {
-  height: 18.75rem;
-  width: 28.125rem;
+  height: 6.75rem;
+  width: 8.125rem;
 
+}
+
+.carta-text{
+/* background-color: aqua; */
+width: 28.125rem;
 }
 
 .carta-text h3 {
 
   font-family: 'Barlow', sans-serif;
-  color: #E30B13;
+  color:black;
   padding: 1.25rem 0rem;
   font-size: 1.875rem;
 
@@ -195,7 +249,7 @@ img {
 
 
 .nosotros {
-  background-image: url("../img/borroso.png");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/fotos/2.5.jpg");
   height: 37.5rem;
   width: 100%;
   background-size: cover;
@@ -244,10 +298,17 @@ img {
 .nosotros-p {
   padding-top: 2.5rem;
   font-size: 1.125rem;
-  color: gray;
-  font-weight: bold;
-  opacity: 0.8;
+  color: white;
+  font-weight: 400;
+  opacity: 0.6;
 
+}
+.titulos-1{
+  color: white;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 50px;
+  font-family: 'Barlow', sans-serif;
 }
 
 .clientes {
@@ -399,8 +460,9 @@ footer button{
 
 }
 
-
-
+.galeria{
+  margin: 30px;
+}
 
 @media screen and (max-width: 1200px) {
   * {
@@ -424,7 +486,7 @@ footer button{
 
   .servicios {
     padding-top: 5rem;
-    height: 87.5rem;
+    height: 70.5rem;
   }
 
   .nosotros {
